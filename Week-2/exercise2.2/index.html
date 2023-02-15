@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rotate</title>
+    <style>
+      #outer {
+        width: 30%;
+        height: 300px;
+        border: 1px solid black;
+        margin: 50px 250px;
+        position: relative;
+        text-align: center;
+        /* transition-property: transform;
+        transition-duration: 3.5s;
+        transition-timing-function: ease-in-out; */
+      }
+
+      #first {
+        width: 50%;
+        height: 150px;
+        background-color: red;
+        position: absolute;
+      }
+      .parent:hover .child1 {
+        transform: rotate(90deg);
+        transform-origin: left top;
+        transition-duration: 3.5s;
+        transition-timing-function: ease-in-out;
+      }
+      #second {
+        width: 50%;
+        height: 150px;
+        background-color: yellow;
+        position: absolute;
+        margin-left: 50%;
+      }
+      .parent:hover .child2 {
+        transform: rotate(-90deg);
+        transform-origin: right top;
+        transition-duration: 3.5s;
+        transition-timing-function: ease-in-out;
+      }
+      #third {
+        width: 50%;
+        height: 149px;
+        background-color: green;
+        position: absolute;
+        margin-top: 151px;
+      }
+      .parent:hover .child3 {
+        transform: rotate(-90deg);
+        transform-origin: left bottom;
+        transition-duration: 3.5s;
+        transition-timing-function: ease-in-out;
+      }
+      #fourth {
+        width: 50%;
+        height: 149px;
+        background-color: blue;
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 151px;
+      }
+      .parent:hover .child4 {
+        transform: rotate(90deg);
+        transform-origin: right bottom;
+        transition-duration: 3.5s;
+        transition-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer" class="parent">
+      <div id="first" class="child1"></div>
+      <div id="second" class="child2"></div>
+      <div id="third" class="child3"></div>
+      <div id="fourth" class="child4"></div>
+      <h1>Hii!!</h1>
+    </div>
+  </body>
+</html>
