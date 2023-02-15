@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. example of call function
+      function greet(name) {
+        var reply = [
+          name,
+          this.animal,
+          "typically sleep between",
+          this.sleepDuration,
+        ].join(" ");
+
+        console.log(reply);
+      }
+
+      var cats = {
+        animal: "cats",
+        sleepDuration: "12 and 16 hours",
+      };
+
+      var dogs = {
+        animal: "dogs",
+        sleepDuration: "2 and 5 hours",
+      };
+      greet.call(cats, "krishna");
+      greet.call(dogs, "gopal");
+
+      // 2. example of bind function
+      function sum(a, b) {
+        return this.a + this.b;
+      }
+      //! sumB is different function
+      const sumB = sum.bind({ a: 10, b: 20 });
+
+      console.log(sumB()); // result=30
+
+      const sumC = sumB.bind({ a: 20, b: 30 });
+
+      console.log(sumC()); //result still 30,  because  .bind binds permanently
+
+      // 3. example of apply function
+
+      var numbers = [8, 4, 6, 2, 5];
+
+      var max = Math.max.apply(null, numbers);
+      console.log(`maximum number is ${max}`);
+
+      var min = Math.min.apply(null, numbers);
+      console.log(`minimum number is ${min}`);
+    </script>
+  </body>
+</html>
