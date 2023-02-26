@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wrapper {
+        width: 90%;
+        height: 1100px;
+        margin-left: 5%;
+        border: 2px solid black;
+        position: relative;
+        background-color: aqua;
+      }
+      #article {
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        background-color: aquamarine;
+      }
+      #header {
+        width: 99.9%;
+        height: 150px;
+        position: absolute;
+        text-align: center;
+        color: coral;
+      }
+      #header heading {
+        padding-bottom: 2%;
+      }
+      #first {
+        width: 45%;
+        height: 200px;
+        position: absolute;
+        margin-top: 151px;
+        text-align: center;
+      }
+      #image {
+        width: 45%;
+        height: 230px;
+        position: absolute;
+        margin-top: 352px;
+      }
+      #image img {
+        width: 300px;
+        padding: 10px 20px 10px 120px;
+      }
+      #third {
+        width: 50%;
+        height: 300px;
+        position: relative;
+        float: right;
+        margin-top: 151px;
+        text-align: left;
+      }
+      #forth {
+        width: 50%;
+        height: 148px;
+        position: absolute;
+        float: right;
+        margin-top: 452px;
+        margin-left: 50%;
+      }
+
+      #form {
+        width: 99%;
+        height: 499px;
+        position: absolute;
+        margin-top: 602px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="article">
+        <div id="header">
+          <h2 id="heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </h2>
+        </div>
+        <div id="first">
+          <h3><i>what is Lorem Ipsum</i></h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+        <div id="image">
+          <a>
+            <img
+              src="data:image/jpeg;base64,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"
+            />
+          </a>
+        </div>
+        <div id="third">
+          <h3><i>Why do we use it? </i></h3>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+        </div>
+        <div id="forth">
+          <h3><i>Where can I get some? </i></h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <div id="fifth"></div>
+      </div>
+      <div id="form">
+        <form>
+          <h1><u>Form</u></h1>
+          <label>
+            Title: Mr<input type="radio" name="title" /> Mrs<input
+              type="radio"
+              name="title"
+            />
+            Miss<input type="radio" name="title" /> </label
+          ><br /><br />
+          <label> First name<input type=" text" /> </label><br /><br />
+          <label> Last name<input type=" text" /> </label><br /><br />
+          <label>
+            Email<input type="email" pattern=".*@gmail.com" />
+            <input type="submit" value="click" /> </label
+          ><br /><br />
+          <label> Phone number<input type="number" /> </label><br /><br />
+          <label> Password<input type="password" /> </label><br /><br />
+          <label> Confirm your password<input type="password" /> </label
+          ><br /><br />
+          <label
+            >Country<select>
+              <option>India</option>
+              <option>Canada</option>
+              <option>Honkong</option>
+              <option>Malasia</option>
+              <option>Indonasia</option>
+              <option>America</option>
+              <option>Africa</option>
+            </select> </label
+          ><br /><br />
+          <label
+            ><input type="checkbox" /> I agree to
+            <u style="color: red">term and condition</u></label
+          ><br /><br />
+          <button>sign up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
